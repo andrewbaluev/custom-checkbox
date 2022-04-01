@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Что добавить в пиццу?</h1>
+
+    <div class="check-group">
+      <!-- здесь находится код наших чекбоксов -->
+
+      <!-- создаём подпись и указываем, к какому элементу она относится -->
+      <label for="myCheckbox01" class="checkbox">
+        <!-- размещаем обычный чекбокс и задаём ему нужный класс -->
+        <!-- также указываем id, чтобы подпись смогла найти этот инбокс -->
+        <input class="checkbox__input" type="checkbox" id="myCheckbox01" />
+
+        <!-- готовим виртуальное пространство для рисования -->
+        <!-- prettier-ignore -->
+        <svg class="checkbox__icon" viewBox="0 0 22 22">
+            <!-- рисуем красивую рамку чекбокса -->
+            <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="#006F94" rx="3" />
+            <!-- сразу делаем красивую галочку, но пока делаем её невидимой -->
+            <path class="tick" stroke="#6EA340" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+          </svg>
+
+        <!-- подписываем наш чекбокс -->
+        <span class="checkbox__label">Оливки</span>
+      </label>
+
+      <label for="myCheckbox02" class="checkbox">
+        <input class="checkbox__input" type="checkbox" id="myCheckbox02" />
+        <!-- prettier-ignore -->
+        <svg class="checkbox__icon" viewBox="0 0 22 22">
+            <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="#006F94" rx="3" />
+            <path class="tick" stroke="#6EA340" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+          </svg>
+        <span class="checkbox__label">Пепперони</span>
+      </label>
+
+      <label for="myCheckbox03" class="checkbox">
+        <input class="checkbox__input" type="checkbox" id="myCheckbox03" />
+        <!-- prettier-ignore -->
+        <svg class="checkbox__icon" viewBox="0 0 22 22">
+            <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="#006F94" rx="3" />
+            <path class="tick" stroke="#6EA340" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+          </svg>
+        <span class="checkbox__label">Каперсы</span>
+      </label>
+
+      <label for="myCheckbox04" class="checkbox">
+        <input class="checkbox__input" type="checkbox" id="myCheckbox04" />
+        <!-- prettier-ignore -->
+        <svg class="checkbox__icon" viewBox="0 0 22 22">
+            <rect width="21" height="21" x=".5" y=".5" fill="#FFF" stroke="#006F94" rx="3" />
+            <path class="tick" stroke="#6EA340" fill="none" stroke-linecap="round" stroke-width="4" d="M4 10l5 5 9-9" />
+          </svg>
+        <span class="checkbox__label">Помидоры</span>
+      </label>
+      <div class="check-group__result">Выбрано:</div>
+    </div>
+  </body>
+</html>
